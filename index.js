@@ -8,6 +8,11 @@ app.use(cors())
 app.use(express.json())
 
 
+app.get('/', (req, res)=>{
+    res.send('GURUJON BACKEND CONNECTED')
+})
+
+
 app.listen(port, (req, res)=>{
     console.log('listening to port ',port);
 })
